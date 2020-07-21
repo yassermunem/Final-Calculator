@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculator">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="icon.png"/>
+    <link rel="stylesheet" href="style.css" type="text/css" id="style"/>
+    <link href='https://fonts.googleapis.com/css?family=Overlock SC' rel='stylesheet'>
+  </head>
+  <body>
+      <div class="text">
+      <h1>CALCULATOR</h1>
+      <h2 class="h2">By | Yasser A. Ahmed</h2>   
+      </div>
+        <div class="calculator">
+        <div class= "screen">
+        <input id="secScreen" spellcheck="false" onkeydown="return false">
+        <input id="homeScreen" spellcheck="false" onkeydown="return false">
+        </div>
+            <div class="buttons">
+              <div class="c">
+              <button id="currency" onclick="currencyIlsToUsd()"><span>ILS/US</span></button>
+              <button id="currency" onclick="currencyUsdToIls()"><span>US/ILS</span></button>
+              <button id="currency" onclick="currencyIlsToEur()"><span>ILS/EU</span></button>
+              <button id="currency" onclick="currencyEurToIls()"><span>EU/ILS</span></button>
+              </div>
+              
+              <div class="c1">
+              <button id="C" onclick="clearScreen();">C</button>
+              <button id="del" onclick="del();"><img src="backspace-icon.png" width="30px" id="backspace" value="1" style="margin-top: 5px;"></button>
+              <button class="multiplied-by"  onclick="insert('*')">×</button>
+              <button class="divion" onclick="insert('/')">÷</button> 
+              </div>
+
+              <div class="c2">
+              <button class="number" onclick="insert('1')">1</button>
+              <button class="number" onclick="insert('2')">2</button>
+              <button class="number" onclick="insert('3')">3</button>
+              <button class="plus" onclick="insert('+')">+</button>  
+              </div>
+
+              <div class="c3">
+              <button class="number" onclick="insert('4')" >4</button>
+              <button class="number" onclick="insert('5')" >5</button>
+              <button class="number" onclick="insert('6')" >6</button>
+              <button class="minus" onclick="insert('-')" >-</button>
+              </div>
+
+              <div class="c4">
+              <button class="number" onclick="insert('7')" >7</button>
+              <button class="number" onclick="insert('8')" >8</button>
+              <button class="number" onclick="insert('9')">9</button>
+              <button class="percent" onclick="insert('%')" >%</button>
+              </div>
+
+              <div class="c5">
+              <button value="0" onclick="changeStyleToDark('dark-style.css', 'style.css')" id="mood">Dark</button>
+              <button class="number" onclick="insert('0')">0</button>
+              <button class ="dot" onclick="insert('.')" >.</button>  
+              <button id="calculate">=</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <script src="main.js"></script>
+  </body>  
+</html>
