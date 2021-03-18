@@ -183,6 +183,8 @@ button:active{
     body{background-image: none;}
     .text{display: none;}
     .calculator{
+        width: 350px;
+        height:500px;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);}
